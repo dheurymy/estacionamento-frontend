@@ -1,0 +1,325 @@
+.ticket-pagamento {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+
+    border: 2px solid var(--corBordas);
+    border-radius: 5px;
+
+    width: 600px;
+    height: auto;
+
+    text-align: center;
+
+    & h2 {
+        width: 100%;
+
+        
+        font-size: 3em;
+        font-weight: 700;
+
+        & strong {
+            color: var(--corTextoVerde);
+        }
+    }
+
+    & p {
+        width: 95%;
+        font-size: 1em;
+        
+    }
+
+    & form {
+        width: 95%;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1em;
+
+        
+
+            & label {
+                width: 100%;
+                text-align: left;
+                font-weight: 550;
+            }
+
+            & input , select {
+                width: 100%;
+                height: 3em;
+                border: 1px solid var(--corBordas);
+                border-radius: 5px;
+                padding: 0.2em;
+
+                & input::placeholder {
+                    color: var(--corTextoCinza);
+                }
+            }
+       
+
+      
+
+        & button {
+            width: 300px;
+            height: 60px;
+
+            border: 1px solid var(--corBordas);
+            border-radius: 5px;
+            
+            cursor: pointer;
+
+            font-weight: 600;
+            font-size: 1.6em;
+            color: var(--corTextoBranco);
+
+            background-color: var(--corTextoVerde);
+
+        }
+    }
+
+    & .ticket-pagamento-info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: .8em;
+
+        width: 95%;
+        height: auto;
+
+        border: 1px solid var(--corBordas);
+        border-radius: 5px;
+
+        padding-bottom: 1em;
+
+       & .info {
+            width: 95%;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            gap: 1em;
+            padding-top: 0.5em;
+
+            & h3 {
+                width: 50%;
+                text-align: left;
+                font-size: 1em;
+                font-weight: 600;
+                color: var(--corTextoVerde);
+                padding-left: 0.5em;
+            }
+
+            & p {
+                width: 50%;
+                text-align: right;
+                font-size: 1em;
+                font-weight: 600;
+                color: var(--corTextoCinza);
+                padding-right: 0.5em;
+            }
+       }
+
+       & .info-data {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 0.5em;
+
+        width: 95%;
+        height: auto;
+
+        & p {
+            width: 50%;
+            text-align: center;
+            font-size: .9em;
+           
+            
+            
+
+            & strong {
+                font-weight: 600;
+            }
+        }
+
+       
+
+
+       }
+
+       & .info-veiculo {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 0.5em;
+
+        width: 95%;
+        height: auto;
+
+        & p {
+            
+            text-align: center;
+            font-size: .9em;
+            
+            
+
+            & strong {
+                font-weight: 600;
+            }
+        }
+       }
+
+       & .info-pagamento {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 2em;
+
+        width: 95%;
+        height: auto;
+
+       & button {
+            width: 70px;
+
+            height: 70px;
+            border: 1px solid var(--corBordas);
+            border-radius: 5px;
+            background-color: var(--corTextoVerde);
+            color: var(--corTextoBranco);
+            font-size: 1em;
+            font-weight: 600;
+            cursor: pointer;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            
+
+            & img {
+                width: 40px;
+                height: 40px;
+
+            }
+        }
+
+       
+       
+       }
+
+       & .pagamento-pix {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 0.5em;
+        
+       & div {
+            width: 95%;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5em;
+
+            & img {
+                width: 200px;
+                height: 200px;
+                border: 1px solid var(--corBordas);
+                border-radius: 5px;
+            }
+
+            & div {
+                display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5em;
+
+            & button {
+            width: 100px;
+            height: 60px;
+
+            border: 1px solid var(--corBordas);
+            border-radius: 5px;
+            
+            cursor: pointer;
+
+            font-weight: 600;
+            font-size: 0.8em;
+            color: var(--corTextoBranco);
+
+            background-color: var(--corTextoVerde);
+
+        }
+
+        & #cancelar {
+            background-color: var(--corTextoAmarelo);
+        }
+                
+            }
+        }
+       
+       }
+    }
+
+    & .navegacao {
+        width: 95%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: right;
+        gap: 1em;
+
+        & button {
+            width: 50px;
+            height: 20px;
+
+            border: 1px solid var(--corBordasSecundarias);
+            border-radius: 5px;
+            background-color: var(--corBordasSecundarias);
+
+            font-size: 0.8em;
+            font-weight: 600;
+            cursor: pointer;
+        }
+    }
+
+    & .menu {
+        display: flex;
+        flex-direction: row;
+        align-items: center;    
+        justify-content: center;
+        gap: 1em;
+        width: 95%;
+        height: auto;
+        padding-top: 1em;
+        padding-bottom: 1em;
+
+        & button {
+            width: 100px;
+            height: 50pxpx;
+
+            border: 1px solid var(--corBordas);
+            border-radius: 5px;
+            
+            cursor: pointer;
+
+            font-weight: 600;
+            font-size: 0.8em;
+            color: var(--corTextoBranco);
+
+            background-color: var(--corTextoVerde);
+            padding: 0.5em;
+
+        }
+        
+    }
+}
