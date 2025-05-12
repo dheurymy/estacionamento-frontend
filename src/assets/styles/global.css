@@ -1,57 +1,17 @@
-
-
-/* Reset CSS completo */
 * {
-    margin: 0;
-    padding: 0;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
     box-sizing: border-box;
-}
-
-html, body {
-    width: 100%;
-    height: 100%;
-    font-family: sans-serif;
-}
-
-/* Removendo estilos padrão de elementos de formulário */
-button, input, select, textarea {
-    all: unset;
-    font-family: inherit;
-}
-
-/* Ajuste para listas */
-ul, ol {
-    list-style: none;
-}
-
-/* Removendo estilos padrão de links */
-a {
+	vertical-align: baseline;
     text-decoration: none;
-    color: inherit;
+
+   
 }
 
-/* Garantindo que as imagens não extrapolem os contêineres */
-img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-}
 
-/* Normalizando tipografia */
-h1, h2, h3, h4, h5, h6 {
-    font-weight: normal;
-}
-
-/* Melhorando a acessibilidade para foco de teclado */
-*:focus {
-    outline: none;
-}
-
-/* Definindo um comportamento uniforme para tabelas */
-table {
-    border-collapse: collapse;
-    border-spacing: 0;
-}
 
 
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
