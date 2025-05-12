@@ -101,13 +101,14 @@
             min-width: 300px;
             display: flex;
             flex-direction: row;
+            flex-wrap: nowrap;
             align-items: space-between;
             justify-content: space-between;
             
             padding-top: 0.5em;
 
             & h3 {
-                width: 250px;
+                width: 200px;
                 text-align: left;
                 font-size: 1em;
                 font-weight: 600;
@@ -116,7 +117,7 @@
             }
 
             & p {
-                width: 250px;
+                width: 200px;
                 text-align: right;
                 font-size: 1em;
                 font-weight: 600;
