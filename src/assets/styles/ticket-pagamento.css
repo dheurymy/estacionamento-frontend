@@ -101,13 +101,13 @@
             min-width: 300px;
             display: flex;
             flex-direction: row;
-            align-items: center;
-            justify-content: center;
+            align-items: space-between;
+            justify-content: space-between;
             gap: 1em;
             padding-top: 0.5em;
 
             & h3 {
-                width: 50%;
+               
                 text-align: left;
                 font-size: 1em;
                 font-weight: 600;
@@ -116,7 +116,7 @@
             }
 
             & p {
-                width: 50%;
+               
                 text-align: right;
                 font-size: 1em;
                 font-weight: 600;
@@ -129,7 +129,7 @@
         display: flex;
         flex-direction: row;
         align-items: center;
-        justify-content: center;
+        justify-content: space-between;
         gap: 0.5em;
 
         width: 95%;
@@ -137,7 +137,7 @@
         height: auto;
 
         & p {
-            width: 50%;
+            
             text-align: center;
             font-size: .9em;
            
