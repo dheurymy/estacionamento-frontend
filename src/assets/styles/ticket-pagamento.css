@@ -103,7 +103,7 @@
             flex-direction: row;
             align-items: space-between;
             justify-content: space-between;
-            gap: 1em;
+            
             padding-top: 0.5em;
 
             & h3 {
@@ -130,7 +130,7 @@
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
-        gap: 0.5em;
+        
 
         width: 500px;
         min-width: 300px;
@@ -159,14 +159,14 @@
         flex-direction: row;
         align-items: center;
         justify-content: center;
-        gap: 0.5em;
+        
 
         width: 500px;
         min-width: 300px;
         height: auto;
 
         & p {
-            
+            width: 150px;
             text-align: center;
             font-size: .9em;
             
