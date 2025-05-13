@@ -106,7 +106,7 @@
             justify-content: center;
 
             & h3 {
-                width: 200px;
+                width: 150px;
                 text-align: left;
                 font-size: 1.2em;
                 font-weight: 600;
@@ -116,7 +116,7 @@
             & p {
                 width: 300px;
                 text-align: right;
-                font-size: 1.2em;
+                font-size: 1em;
                 font-weight: 600;
                 color: var(--corTextoCinza);
             }
@@ -266,5 +266,37 @@
 
 
 
+    }
+
+     & .menu {
+        display: flex;
+        flex-direction: row;
+        align-items: center;    
+        justify-content: center;
+        gap: 1em;
+        width: 95%;
+        min-width: 300px;
+        height: auto;
+        padding-top: 1em;
+        padding-bottom: 1em;
+
+        & button {
+            width: 100px;
+            height: 50pxpx;
+
+            border: 1px solid var(--corBordas);
+            border-radius: 5px;
+            
+            cursor: pointer;
+
+            font-weight: 600;
+            font-size: 0.8em;
+            color: var(--corTextoBranco);
+
+            background-color: var(--corTextoVerde);
+            padding: 0.5em;
+
+        }
+        
     }
 }
