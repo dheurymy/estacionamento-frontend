@@ -3,7 +3,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 20px;
+    gap: 1em;
 
     border: 2px solid var(--corBordas);
     border-radius: 5px;
@@ -12,7 +12,6 @@
     height: auto;
 
     text-align: center;
-    padding: 1em;
 
     & h2 {
         width: 100%;
@@ -83,132 +82,144 @@
     }
 
     & .ticket-pagamento-info {
-        width: 550px;
-        height: auto;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        
+        gap: .8em;
+
+        width: 550px;
+        height: auto;
 
         border: 1px solid var(--corBordas);
         border-radius: 5px;
 
-        padding: 10px;
+        padding-bottom: 1em;
 
-        & .info-ticket {
+       & .info {
             width: 500px;
-            height: 40px;
-
+            height: 50px;
             display: flex;
             flex-direction: row;
+            gap: 20px;
             align-items: center;
             justify-content: center;
+            
+            padding-top: 0.5em;
 
             & h3 {
                 width: 200px;
                 text-align: left;
-                font-size: 1.2em;
-                font-weight: 600;
-                color: var(--corTextoVerde);
-            }
-
-            & p {
-                width: 300px;
-                text-align: right;
-                font-size: 1.2em;
-                font-weight: 600;
-                color: var(--corTextoCinza);
-            }
-
-
-        }
-
-        & .info-data {
-            width: 500px;
-            height: 40px;
-
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            justify-content: center;
-            gap: 10px;
-
-            
-
-            & p {
-                width: 220px;
-                text-align: center;
-                font-size: .9em;
-                font-weight: 600;
-                
-                & strong {
-                    font-weight: 600;
-                }
-            }
-        }
-
-        & .info-veiculo {
-            width: 500px;
-            height: 40px;
-
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            justify-content: center;
-            gap: 10px;
-
-            
-
-            & p {
-                width: 160px;
-                text-align: center;
-                font-size: .9em;
-                font-weight: 600;
-                
-                & strong {
-                    font-weight: 600;
-                }
-            }
-        }
-
-        & .info-pagamento {
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            justify-content: center;
-            gap: 2em;
-
-            width: 500px;
-            height: auto;
-
-            & button {
-                width: 70px;
-
-                height: 70px;
-                border: 1px solid var(--corBordas);
-                border-radius: 5px;
-                background-color: var(--corTextoVerde);
-                color: var(--corTextoBranco);
                 font-size: 1em;
                 font-weight: 600;
-                cursor: pointer;
+                color: var(--corTextoVerde);
+                
+            }
 
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                justify-content: center;
+            & p {
+                width: 250px;
+                text-align: right;
+                font-size: 1em;
+                font-weight: 600;
+                color: var(--corTextoCinza);
+               
+            }
+       }
 
+       & .info-data {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        gap: 10px;
+        
 
-                & img {
-                    width: 40px;
-                    height: 40px;
+        width: 500px;
+       
+        height: 50px;
 
-                }
+        & p {
+            width: 220px;
+            text-align: center;
+            font-size: .9em;
+           
+            
+            
+
+            & strong {
+                font-weight: 600;
             }
         }
 
-        & .pagamento-pix {
+       
+
+
+       }
+
+       & .info-veiculo {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        
+
+        width: 500px;
+        height: 50px;
+        gap: 10px;
+
+        & p {
+            width: 150px;
+            text-align: center;
+            font-size: .9em;
+            
+            
+
+            & strong {
+                font-weight: 600;
+            }
+        }
+       }
+
+       & .info-pagamento {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 2em;
+
+        width: 500px;
+        height: auto;
+
+       & button {
+            width: 70px;
+
+            height: 70px;
+            border: 1px solid var(--corBordas);
+            border-radius: 5px;
+            background-color: var(--corTextoVerde);
+            color: var(--corTextoBranco);
+            font-size: 1em;
+            font-weight: 600;
+            cursor: pointer;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            
+
+            & img {
+                width: 40px;
+                height: 40px;
+
+            }
+        }
+
+       
+       
+       }
+
+       & .pagamento-pix {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -263,8 +274,59 @@
             }
             
         }
+    }
 
+    & .navegacao {
+        width: 95%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: right;
+        gap: 1em;
 
+        & button {
+            width: 50px;
+            height: 20px;
 
+            border: 1px solid var(--corBordasSecundarias);
+            border-radius: 5px;
+            background-color: var(--corBordasSecundarias);
+
+            font-size: 0.8em;
+            font-weight: 600;
+            cursor: pointer;
+        }
+    }
+
+    & .menu {
+        display: flex;
+        flex-direction: row;
+        align-items: center;    
+        justify-content: center;
+        gap: 1em;
+        width: 95%;
+        min-width: 300px;
+        height: auto;
+        padding-top: 1em;
+        padding-bottom: 1em;
+
+        & button {
+            width: 100px;
+            height: 50pxpx;
+
+            border: 1px solid var(--corBordas);
+            border-radius: 5px;
+            
+            cursor: pointer;
+
+            font-weight: 600;
+            font-size: 0.8em;
+            color: var(--corTextoBranco);
+
+            background-color: var(--corTextoVerde);
+            padding: 0.5em;
+
+        }
+        
     }
 }

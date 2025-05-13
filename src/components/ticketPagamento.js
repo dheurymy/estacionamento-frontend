@@ -174,8 +174,11 @@ const TicketPagamento = () => {
     return (
         <div className='ticket-pagamento'>
             <h2>Estaciona <strong>Aqui</strong></h2>
-            <p>Preencha o campo abaixo para fazer o<br />pagamento de seu ticket do estacionamento.</p>
             {isSubmitted === false && (
+                <p>Preencha o campo abaixo para fazer o<br />pagamento de seu ticket do estacionamento.</p>
+            )}
+            {isSubmitted === false && (
+                
                 <form onSubmit={handleSubmit}>
                 <label htmlFor='ticketId'>ID do Ticket:</label>
                 <input
@@ -199,9 +202,9 @@ const TicketPagamento = () => {
             )}
             {isSubmitted && (
                 <div className='ticket-pagamento-info'>
-                    <div className='info'>
+                    <div className='info-ticket'>
                         <h3>Ticket</h3>
-                        <p><strong>ID:</strong> {formData.numero}</p>
+                        <p> {formData.numero}</p>
                     </div>
                     <div className='info-data'>
                         <p><strong>Entrada:</strong> {new Date(formData.entrada).toLocaleString()}</p>
@@ -227,9 +230,9 @@ const TicketPagamento = () => {
                     {isPix === true && (
                         <div className='pagamento-pix'>
                         <h6>Escaneie o QR code a seguir e realize o pagamento do seu ticket.</h6>
-                        <div>
+                        <div className='qrcode'>
                             <img src={qrcode} alt="QR Code" />
-                            <div>
+                            <div className='botoes-pagamento'>
                                 <button onClick={handlePagamentoRealizado}>pagamento realizado</button>
                                 <button id='cancelar' onClick={() => cancelarPagamento()} >cancelar pagamento</button>
                             </div>
@@ -239,9 +242,9 @@ const TicketPagamento = () => {
                     {isCard === true && (
                         <div className='pagamento-pix'>
                         
-                        <div>
+                        <div className='qrcode'>
                             
-                            <div>
+                            <div className='botoes-pagamento'>
                                 <button onClick={handlePagamentoRealizado}>pagamento realizado</button>
                                 <button id='cancelar' onClick={() => cancelarPagamento()} >cancelar pagamento</button>
                             </div>
