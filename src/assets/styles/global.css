@@ -8,7 +8,12 @@
 	vertical-align: baseline;
     text-decoration: none;
 
+
    
+}
+
+div {
+    display: flex !important;
 }
 
 
